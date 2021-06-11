@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp1.AuthWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="App" Height="500" Width="750">
+    <Grid x:Name="MainRoot" Background="DarkSlateBlue">
+        <Border MinWidth="400" Margin="15" Background="DarkCyan" VerticalAlignment="Center" Padding="30px" MaxWidth="550" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" Color="DarkGray" ShadowDepth="0" >
+                </DropShadowEffect>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Authorization" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"></TextBlock>
+                <Grid Margin="0 0 0 20" >
+                    <Button HorizontalAlignment="Left" Content="registration" Click="Auth_Click"></Button>
+                    <Button HorizontalAlignment="Right" Style="{StaticResource MaterialDesignFlatButton}" Content="enter"></Button>
+
+                </Grid>
+                <TextBox x:Name="TextBoxLogin" materialDesign:HintAssist.Hint="Enter login" Style="{StaticResource MaterialDesignFloatingHintTextBox}"></TextBox>
+                <PasswordBox x:Name="PasswordBoxPassword" materialDesign:HintAssist.Hint="Enter password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"></PasswordBox>                
+                <Button Content="Enter" Margin="0 0 10 10" Click="enter_auth_Click"></Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp1.Collections"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Collections" Height="450" Width="800">
+    <Grid x:Name="MainRoot" Background="#315F88">
+        <Border MinWidth="400" Margin="15" Background="#439E87" VerticalAlignment="Center" Padding="30px" MaxWidth="550" CornerRadius="20">
+
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" Color="DarkGray" ShadowDepth="0" >
+                </DropShadowEffect>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Collections" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"  ></TextBlock>
+                <Button Content="Winter Collection" Margin="100 0 100 10"  
+                         Style="{StaticResource MaterialDesignFlatLightBgButton}" Click="winter_click">
+                </Button>
+                <Button Content="Spring Collection" Margin="100 0 100 10" Click="spring_click"  Style="{StaticResource MaterialDesignFlatLightBgButton}" ></Button>
+                <Button Content="Summer Collection" Margin="100 0 100 10" Style="{StaticResource MaterialDesignFlatLightBgButton}" Click="summer_click" ></Button>
+                <Button Content="Autumn Collection" Margin="100 0 100 10" Style="{StaticResource MaterialDesignFlatLightBgButton}" Click="autumn_click" ></Button>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+
+
+
+
+
+</Window>
+
+
+
